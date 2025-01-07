@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Video viewer DmonOw</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">USB VIDEO CAPTURE VIEWER (By DmonOw)</h1>
+        <div class="main-content">
+            <div id="videoContainer">
+                <video id="webcam" autoplay playsinline muted></video>
+            </div>
+            <div id="controls">
+                <div class="control-panel">
+                    <div class="device-controls">
+                        <div class="control-group">
+                            <label for="cameraSelect" id="cameraLabel">Seleccionar Cámara:</label>
+                            <select id="cameraSelect"></select>
+                        </div>
+                        <div class="control-group">
+                            <label for="audioInputSelect" id="audioInputLabel">Seleccionar entrada de audio:</label>
+                            <select id="audioInputSelect"></select>
+                        </div>
+                        <div class="control-group">
+                            <label for="volumeControl" id="volumeLabel">Control de Volumen:</label>
+                            <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button id="fullScreenButton">Pantalla Completa</button>
+                        <button id="themeToggleButton">Modo Oscuro</button>
+                        <button id="languageToggleButton">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
